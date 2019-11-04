@@ -1,0 +1,17 @@
+{
+  "name": "golfProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "action.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^12.11.0",
+    "node-sass": "^4.12.0"
+  }
+}

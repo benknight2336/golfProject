@@ -1,0 +1,15 @@
+.box{
+    display: flex;
+
+    .column{
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .minibox{
+        border: 1px solid;
+        width: 30px;
+        height: 30px;
+    }
+}
