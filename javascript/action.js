@@ -1,11 +1,13 @@
-let numPlayers=1;
+let numPlayers=0;
 let frontNine = 9;
 let backNine = 18;
 
+
 function enterPlayerNames(){
-    for(let pn = 1; pn <= numPlayers; pn++){
-        $('.playerInput').append("<input class='playerNames' id='playerNames' placeholder='Enter Player Name...'></input>")
-    }
+    numPlayers++;
+    
+    $('.playerInput').append("<div class='playerNames'><input  id='playerNames' type='text' placeholder='Enter Player Name...'></input></div>")
+
     buildPlayers();
 }
 
@@ -19,7 +21,8 @@ function buildFrontNine(){
 
 addFrontNine();
 function addFrontNine(){
-    $(".box").append('<div id="colAddFront" class="addSeperate">Front</div>')
+        $(".box" ).append('<div id="colAddFront" class="addSeperate">Front</div>')
+    
 
 }
 
@@ -37,14 +40,13 @@ function addBackNine(){
 }
 
 function buildPlayers(){
-    for(p = 1; p <= numPlayers; p++){
-
-        for(let h = 1; h <= backNine; h++){
-            $("#col"+ h).append(`<input id="p${p}h${h}" class="minibox"></input>`);
-            $("#addFront"+ h).append(`<input id="p${p}h${h}" class="minibox"></input>`);
-            $("#addBack"+ h).append(`<input id="p${p}h${h}" class="minibox"></input>`);
-
-        }
+    
+    console.log(numPlayers);
+    for(let h = 1; h <= backNine; h++){
+        $("#col"+ h).append(`<input id="p${numPlayers}h${h}" class="minibox"></input>`);
     }
+    $("#colAddFront").append(`<input class="minibox"></input>`);
+    $("#colAddBack").append(`<input class="minibox"></input>`);
+    
 }
 

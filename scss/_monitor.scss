@@ -1,9 +1,20 @@
-@media only screen and (min-width: 651px){
+@media only screen and (min-width: 701px){
+
     body{
-        margin: 0;
+        margin: 0 5px 15px 5px;
         padding: 0;
-        
+        background-color: #009d02;
     }
+
+    .header{
+        display: flex;
+        justify-content: center;
+        background-color: #009e02;
+        box-shadow: 0px 10px 11px -3px rgba(0,0,0,0.51);
+
+    
+    }
+
     .chooseCourses {
         display: flex;
         width: 100%;
@@ -11,6 +22,11 @@
         .courseCard {
             width: 100%;
             margin: 10px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
 
             .courseImg {
                 height: 300px;
@@ -30,13 +46,30 @@
         .playerInput{
             display: flex;
             flex-direction: column;
-            margin: 4px 3px;
+
+            button{
+                margin-bottom: 5px;
+                font-size: 15px;
+                background-color: #29ff2c;
+                outline: none;
+            }
+
+            .playerNames{
+                margin: 2.6px;
+                border-bottom: 1px solid black;
+                border-top: 1px solid black;
+                padding: 8px;
+
+                 input{
+                     outline: none;
+                 }
+            }
         }
 
         .box{
         display: flex;
         width: fit-content;
-        background-color: #009e02;
+        background-color: #29ff2c;
 
             .column{
                 margin: 4px 5px;
@@ -52,7 +85,10 @@
                 width: 30px;
                 height: 30px;
                 margin: 4px 3px;
-                background-color: #29ff2c;
+                background-color: #009d02;
+                color: #ffffff;
+                font-size: 20px;
+                outline: none;
             }
             .addSeperate{
                 margin: 4px 5px;

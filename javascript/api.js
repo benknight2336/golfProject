@@ -23,7 +23,7 @@ function displayCourses() {
         <div class="courseCard">
             <div class="courseImg" style="background-image: 
             url(${golfCourses.courses[i].image})"></div>
-        <span>${golfCourses.courses[i].name}</span>
+        <h3>${golfCourses.courses[i].name}</h3>
         </div>
         `)
     }    
