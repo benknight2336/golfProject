@@ -25,11 +25,11 @@ function enterPlayerNames(){
     numPlayers++;
     
     $('.playerInput').append("<div class='playerNames'><input  id='playerNames' type='text' placeholder='Enter Player Name...'></input></div>");
-
     buildPlayers();
 }
 
 function buildTeeBoxHoles(teeBoxIndex){
+    $(".playerInput").show();
     console.log(teeBoxIndex);
 
     buildFrontNine(teeBoxIndex);
@@ -46,6 +46,7 @@ function buildFrontNine(teeBoxIndex){
         teeBoxYards = golfCourse.holes[fn].teeBoxes[teeBoxIndex].yards;
         teeBoxHandicap = golfCourse.holes[fn].teeBoxes[teeBoxIndex].hcp;
         teeBoxPar = golfCourse.holes[fn].teeBoxes[teeBoxIndex].par;
+        
         $(".box").append(`<div id="col${teeBoxNum}" class="column">
                         <div>${teeBoxNum}</div>
                         <div class='yards'>Yards ${teeBoxYards}</div>
@@ -81,13 +82,7 @@ function buildBackNine(teeBoxIndex){
 function addBackNine(){
     $(".box").append(`<div id="colAddBack" class="addSeperate"><span class='label'>Back</span></div>`)
 
-   /*  for(let abn = 9; abn <= backNine; abn++){
-        let it = 0;
-        let id = `p${numPlayers}h${h}`;
-        
-      console.log( it + id)
-
-    } */
+   
 }
 
 function addTotal(){
