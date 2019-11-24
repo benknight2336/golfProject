@@ -3,7 +3,9 @@
     body{
         margin: 0 5px 15px 5px;
         padding: 0;
+        height: 100%;
         background-color: #009d02;
+       
     }
 
     .header{
@@ -77,6 +79,19 @@
                 flex-direction: column;
                 border: 1px solid black;
                 padding: 2px;
+
+                .yards{
+                    border: 1px solid #ffffff;
+                    background-color: #009d02;
+                }
+                .handicap{
+                    border: 1px solid #ffffff;
+                    background-color: #009d02;
+                }
+                .par{
+                    border: 1px solid #ffffff;
+                    background-color: #009d02;
+                }
                 
             }
 
@@ -91,6 +106,13 @@
                 outline: none;
             }
             .addSeperate{
+                margin: 4px 5px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid black;
+                padding: 2px;
+            }
+            .addTotal{
                 margin: 4px 5px;
                 display: flex;
                 flex-direction: column;

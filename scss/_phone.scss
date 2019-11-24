@@ -4,8 +4,10 @@
         margin: 0 5px 15px 5px;
         padding: 0;
         background-color: #009d02;
+        
+    
 
-        .header{
+        .header {
             display: flex;
             justify-content: center;
             background-color: #009e02;
@@ -75,6 +77,15 @@
                     flex-direction: column;
                     border: 1px solid black;
                     padding: 2px;
+
+                    .yards{
+                        border: 1px solid #ffffff;
+                        background-color: #009d02;
+                    }
+                    .par{
+                        border: 1px solid #ffffff;
+                        background-color: #009d02;
+                    }
                     
                 }
 
@@ -90,6 +101,13 @@
 
                 }
                 .addSeperate{
+                    margin: 4px 5px;
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid black;
+                    padding: 2px;
+                }
+                .addTotal{
                     margin: 4px 5px;
                     display: flex;
                     flex-direction: column;

@@ -53,6 +53,12 @@
           flex-direction: column;
           border: 1px solid black;
           padding: 2px; }
+          body .container .box .column .yards {
+            border: 1px solid #ffffff;
+            background-color: #009d02; }
+          body .container .box .column .par {
+            border: 1px solid #ffffff;
+            background-color: #009d02; }
         body .container .box .minibox {
           border: 1px solid;
           width: 30px;
@@ -67,12 +73,19 @@
           display: flex;
           flex-direction: column;
           border: 1px solid black;
+          padding: 2px; }
+        body .container .box .addTotal {
+          margin: 4px 5px;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid black;
           padding: 2px; } }
 
 @media only screen and (min-width: 701px) {
   body {
     margin: 0 5px 15px 5px;
     padding: 0;
+    height: 100%;
     background-color: #009d02; }
   .header {
     display: flex;
@@ -123,6 +136,15 @@
         flex-direction: column;
         border: 1px solid black;
         padding: 2px; }
+        .container .box .column .yards {
+          border: 1px solid #ffffff;
+          background-color: #009d02; }
+        .container .box .column .handicap {
+          border: 1px solid #ffffff;
+          background-color: #009d02; }
+        .container .box .column .par {
+          border: 1px solid #ffffff;
+          background-color: #009d02; }
       .container .box .minibox {
         border: 1px solid;
         width: 30px;
@@ -133,6 +155,12 @@
         font-size: 20px;
         outline: none; }
       .container .box .addSeperate {
+        margin: 4px 5px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 2px; }
+      .container .box .addTotal {
         margin: 4px 5px;
         display: flex;
         flex-direction: column;
