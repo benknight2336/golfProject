@@ -46,7 +46,7 @@ function buildFrontNine(teeBoxIndex){
         teeBoxYards = golfCourse.holes[fn].teeBoxes[teeBoxIndex].yards;
         teeBoxHandicap = golfCourse.holes[fn].teeBoxes[teeBoxIndex].hcp;
         teeBoxPar = golfCourse.holes[fn].teeBoxes[teeBoxIndex].par;
-        $(".box").append(`<div id="col${teeBoxNum}"                             class="column">
+        $(".box").append(`<div id="col${teeBoxNum}" class="column">
                         <div>${teeBoxNum}</div>
                         <div class='yards'>Yards ${teeBoxYards}</div>
                         <div class ='handicap'> Hcp ${teeBoxHandicap}</div>
@@ -58,7 +58,7 @@ function buildFrontNine(teeBoxIndex){
 }
 
 function addFrontNine(){
-    $(".box" ).append('<div id="colAddFront" class="addSeperate">Front</div>')
+    $(".box" ).append(`<div id="colAddFront" class="addSeperate"><span class='label'>Front</span></div>`)
 }
 
 function buildBackNine(teeBoxIndex){
@@ -68,7 +68,7 @@ function buildBackNine(teeBoxIndex){
         teeBoxHandicap = golfCourse.holes[bn].teeBoxes[teeBoxIndex].hcp;
         teeBoxPar = golfCourse.holes[bn].teeBoxes[teeBoxIndex].par;
 
-        $(".box").append(`<div id="col${teeBoxNum}"                             class="column">
+        $(".box").append(`<div id="col${teeBoxNum}" class="column">
                         <div>${teeBoxNum}</div>
                         <div class='yards'>Yards ${teeBoxYards}</div>
                         <div class = 'handicap'> Hcp ${teeBoxHandicap}</div>
@@ -79,7 +79,7 @@ function buildBackNine(teeBoxIndex){
 }
 
 function addBackNine(){
-    $(".box").append('<div id="colAddBack" class="addSeperate">Back</div>')
+    $(".box").append(`<div id="colAddBack" class="addSeperate"><span class='label'>Back</span></div>`)
 
 }
 
@@ -95,9 +95,9 @@ function buildPlayers(){
     for(let h = 1; h <= backNine; h++){
         $("#col"+ h).append(`<input id="p${numPlayers}h${h}" class="minibox"></input>`);
     }
-    $("#colAddFront").append(`<input class="minibox"></input>`);
-    $("#colAddBack").append(`<input class="minibox"></input>`);
-    $("#colAddTotal").append(`<input class="minibox"></input>`);
+    $("#colAddFront").append(`<div class="miniboxSeperate"></div>`);
+    $("#colAddBack").append(`<div class="miniboxSeperate"></div>`);
+    $("#colAddTotal").append(`<div class="miniboxSeperate"></div>`);
 
     
 }
