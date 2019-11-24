@@ -56,14 +56,14 @@
                 outline: none;
             }
 
-            .playerNames{
-                margin: 2.6px;
+            .playersNames{
                 border-bottom: 1px solid black;
                 border-top: 1px solid black;
-                padding: 8px;
-
-                 input{
-                     outline: none;
+                
+                input{
+                    margin: 2.6px;
+                    padding: 8px;
+                    outline: none;
                  }
             }
         }

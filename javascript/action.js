@@ -4,6 +4,7 @@ let frontNine = 8;
 let backNine = 17;
 
 function buildGolfCourseSelect() {
+
     console.log(golfCourse)
     $('.selectTeeTypes').html("");
     html = `<select class='selectOptions' onchange="buildTeeBoxHoles(this.options[this.selectedIndex].value)">
@@ -22,13 +23,16 @@ function buildGolfCourseSelect() {
 }
 
 function enterPlayerNames(){
+    
+
     numPlayers++;
     
-    $('.playerInput').append("<div class='playerNames'><input  id='playerNames' type='text' placeholder='Enter Player Name...'></input></div>");
+    $('.players').append("<div class='playerNames'</div><input id='playerNames' type='text' placeholder='Enter Player Name...'></input></div>");
     buildPlayers();
 }
 
 function buildTeeBoxHoles(teeBoxIndex){
+    $(".playerNames").html("");
     $(".playerInput").show();
     console.log(teeBoxIndex);
 
@@ -41,6 +45,7 @@ function buildTeeBoxHoles(teeBoxIndex){
 }
 
 function buildFrontNine(teeBoxIndex){
+    $(".box").html("");
     for(let fn = 0; fn <= frontNine; fn++){
         teeBoxNum = fn + 1;
         teeBoxYards = golfCourse.holes[fn].teeBoxes[teeBoxIndex].yards;
@@ -59,6 +64,9 @@ function buildFrontNine(teeBoxIndex){
 }
 
 function addFrontNine(){
+
+    
+
     $(".box" ).append(`<div id="colAddFront" class="addSeperate"><span class='label'>Front</span></div>`)
 }
 
@@ -95,12 +103,19 @@ function buildPlayers(){
     
     console.log(numPlayers);
     for(var h = 1; h <= backNine + 1; h++){
-        $("#col"+ h).append(`<input id="p${numPlayers}h${h}" class="minibox"></input>`);
+        $("#col"+ h).append(`<input id="p${numPlayers}h${h}" class="minibox" onchange="addScore(numPlayers, this.value)"></input>`);
     }
-    $("#colAddFront").append(`<div class="miniboxSeperate"></div>`);
-    $("#colAddBack").append(`<div class="miniboxSeperate"></div>`);
-    $("#colAddTotal").append(`<div class="miniboxSeperate"></div>`);
+    $("#colAddTotal").append(`<input value="0" class="miniboxTotal" disabled />`);
 
     
+}
+
+function addScore(numPlayers, inputScore){
+    let score = parseInt(inputScore);
+    let currentTotalScore = parseInt($(".miniboxTotal").val()) + score;
+    
+
+    $(".miniboxTotal").val(currentTotalScore);
+    // console.log(`score: ${currentTotalScore}`);
 }
 

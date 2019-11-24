@@ -20,6 +20,10 @@ function getCourses(){
 
 
 function getCourse(courseId){
+    $(".box").html("");
+    $(".players").html("");
+
+    
     console.log(courseId);
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
@@ -33,6 +37,7 @@ function getCourse(courseId){
 } 
 
 function displayCourses() {
+
     for(let i = 0; i < golfCourses.courses.length; i++) {
         $('.chooseCourses').append(`
         <div class="courseCard">

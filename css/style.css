@@ -124,12 +124,12 @@
         font-size: 15px;
         background-color: #29ff2c;
         outline: none; }
-      .container .playerInput .playerNames {
-        margin: 2.6px;
+      .container .playerInput .playersNames {
         border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        padding: 8px; }
-        .container .playerInput .playerNames input {
+        border-top: 1px solid black; }
+        .container .playerInput .playersNames input {
+          margin: 2.6px;
+          padding: 8px;
           outline: none; }
     .container .box {
       display: flex;
