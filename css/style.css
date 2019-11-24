@@ -124,12 +124,12 @@
         font-size: 15px;
         background-color: #29ff2c;
         outline: none; }
-      .container .playerInput .playersNames {
+      .container .playerInput .playerNames {
+        margin: 2.6px;
         border-bottom: 1px solid black;
-        border-top: 1px solid black; }
-        .container .playerInput .playersNames input {
-          margin: 2.6px;
-          padding: 8px;
+        border-top: 1px solid black;
+        padding: 8px; }
+        .container .playerInput .playerNames input {
           outline: none; }
     .container .box {
       display: flex;
@@ -183,11 +183,12 @@
         padding: 2px; }
         .container .box .addTotal .label {
           margin-bottom: 96px; }
-        .container .box .addTotal .miniboxSeperate {
+        .container .box .addTotal .whyNot input {
           border: 1px solid;
           width: 30px;
           height: 30px;
-          margin: 5px 3px;
+          margin: 4px 3px;
           background-color: #009d02;
           color: #ffffff;
-          font-size: 20px; } }
+          font-size: 20px;
+          outline: none; } }

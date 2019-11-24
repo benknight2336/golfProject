@@ -100,22 +100,21 @@ function addTotal(){
 
 
 function buildPlayers(){
-    
-    console.log(numPlayers);
+    let playerNumber = numPlayers;
     for(var h = 1; h <= backNine + 1; h++){
-        $("#col"+ h).append(`<input id="p${numPlayers}h${h}" class="minibox" onchange="addScore(numPlayers, this.value)"></input>`);
+        $("#col"+ h).append(`<input id="p${numPlayers}h${h}" class="minibox" onchange="addScore(${playerNumber}, this.value)"></input>`);
     }
-    $("#colAddTotal").append(`<input value="0" class="miniboxTotal" disabled />`);
+    $("#colAddTotal").append(`<div class="whyNot"><input value="0" class="miniboxTotalPlayer${playerNumber}" disabled /></div>`);
 
     
 }
 
-function addScore(numPlayers, inputScore){
+function addScore(playerNumber, inputScore){
     let score = parseInt(inputScore);
-    let currentTotalScore = parseInt($(".miniboxTotal").val()) + score;
+    console.log(`score: ${score}, player: ${playerNumber}`);
+    let currentTotalScore = parseInt($(`.miniboxTotalPlayer${playerNumber}`).val()) + score;
     
 
-    $(".miniboxTotal").val(currentTotalScore);
-    // console.log(`score: ${currentTotalScore}`);
+    $(`.miniboxTotalPlayer${playerNumber}`).val(currentTotalScore);
 }
 
