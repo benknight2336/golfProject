@@ -74,6 +74,8 @@
           flex-direction: column;
           border: 1px solid black;
           padding: 2px; }
+          body .container .box .addSeperate .label {
+            margin-bottom: 96px; }
         body .container .box .addTotal {
           margin: 4px 5px;
           display: flex;
@@ -166,7 +168,7 @@
           border: 1px solid;
           width: 30px;
           height: 30px;
-          margin: 4px 3px;
+          margin: 5px 3px;
           background-color: #009d02;
           color: #ffffff;
           font-size: 20px;

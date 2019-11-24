@@ -106,6 +106,10 @@
                     flex-direction: column;
                     border: 1px solid black;
                     padding: 2px;
+
+                    .label{
+                        margin-bottom: 96px;
+                    }
                 }
                 .addTotal{
                     margin: 4px 5px;

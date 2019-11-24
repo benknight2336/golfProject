@@ -64,6 +64,7 @@ function addFrontNine(){
 function buildBackNine(teeBoxIndex){
     for(let bn = 9; bn <= backNine; bn++){
         teeBoxNum = bn + 1;
+        console.log(teeBoxNum);
         teeBoxYards = golfCourse.holes[bn].teeBoxes[teeBoxIndex].yards;
         teeBoxHandicap = golfCourse.holes[bn].teeBoxes[teeBoxIndex].hcp;
         teeBoxPar = golfCourse.holes[bn].teeBoxes[teeBoxIndex].par;
@@ -81,6 +82,13 @@ function buildBackNine(teeBoxIndex){
 function addBackNine(){
     $(".box").append(`<div id="colAddBack" class="addSeperate"><span class='label'>Back</span></div>`)
 
+   /*  for(let abn = 9; abn <= backNine; abn++){
+        let it = 0;
+        let id = `p${numPlayers}h${h}`;
+        
+      console.log( it + id)
+
+    } */
 }
 
 function addTotal(){
@@ -92,7 +100,7 @@ function addTotal(){
 function buildPlayers(){
     
     console.log(numPlayers);
-    for(let h = 1; h <= backNine; h++){
+    for(var h = 1; h <= backNine + 1; h++){
         $("#col"+ h).append(`<input id="p${numPlayers}h${h}" class="minibox"></input>`);
     }
     $("#colAddFront").append(`<div class="miniboxSeperate"></div>`);
