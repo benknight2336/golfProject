@@ -32,7 +32,7 @@
         display: flex;
         flex-direction: column; }
         body .container .playerInput button {
-          margin-bottom: 5px;
+          margin-bottom: 100px;
           font-size: 15px;
           background-color: #29ff2c;
           outline: none; }
@@ -54,6 +54,9 @@
           border: 1px solid black;
           padding: 2px; }
           body .container .box .column .yards {
+            border: 1px solid #ffffff;
+            background-color: #009d02; }
+          body .container .box .column .handicap {
             border: 1px solid #ffffff;
             background-color: #009d02; }
           body .container .box .column .par {
@@ -171,11 +174,20 @@
           margin: 5px 3px;
           background-color: #009d02;
           color: #ffffff;
-          font-size: 20px;
-          outline: none; }
+          font-size: 20px; }
       .container .box .addTotal {
         margin: 4px 5px;
         display: flex;
         flex-direction: column;
         border: 1px solid black;
-        padding: 2px; } }
+        padding: 2px; }
+        .container .box .addTotal .label {
+          margin-bottom: 96px; }
+        .container .box .addTotal .miniboxSeperate {
+          border: 1px solid;
+          width: 30px;
+          height: 30px;
+          margin: 5px 3px;
+          background-color: #009d02;
+          color: #ffffff;
+          font-size: 20px; } }

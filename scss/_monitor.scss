@@ -79,6 +79,7 @@
                 flex-direction: column;
                 border: 1px solid black;
                 padding: 2px;
+                
 
                 .yards{
                     border: 1px solid #ffffff;
@@ -124,7 +125,6 @@
                     background-color: #009d02;
                     color: #ffffff;
                     font-size: 20px;
-                    outline: none;
                 }
 
             }
@@ -134,6 +134,21 @@
                 flex-direction: column;
                 border: 1px solid black;
                 padding: 2px;
+
+                .label{
+                    margin-bottom: 96px;
+                }
+
+                .miniboxSeperate{
+                    border: 1px solid;
+                    width: 30px;
+                    height: 30px;
+                    margin: 5px 3px;
+                    background-color: #009d02;
+                    color: #ffffff;
+                    font-size: 20px;
+                }
+
             }
         }
     

@@ -48,7 +48,7 @@
                 flex-direction: column;
     
                 button{
-                    margin-bottom: 5px;
+                    margin-bottom: 100px;
                     font-size: 15px;
                     background-color: #29ff2c;
                     outline: none;
@@ -79,6 +79,10 @@
                     padding: 2px;
 
                     .yards{
+                        border: 1px solid #ffffff;
+                        background-color: #009d02;
+                    }
+                    .handicap{
                         border: 1px solid #ffffff;
                         background-color: #009d02;
                     }
